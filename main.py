@@ -13,3 +13,6 @@ my_school = "soronko academy"
 print(string.ascii_letters)
 print(string.ascii_lowercase)
 print(string.ascii_uppercase)
+print(string.punctuation)
+print(string.digits)
+print(repr(string.whitespace))
