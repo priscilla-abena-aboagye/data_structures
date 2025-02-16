@@ -1,7 +1,10 @@
 # Python Trials
-## Overview
-This Python file demonstrates various methods and their functionalities in Python. Methods are functions that belong to objects, and they help manipulate data, perform operations, and automate tasks efficiently.
+## Introduction
+This repository contains a Python script demonstrating the usage of the ' `string` module, showcasing various built-in constants and string manipulations.
 
 ## Features
-- Demonstrates built-in Python methods
-- Covers string
+- Demonstrates the `string` module usage
+- Prints ASCII letters, digits, and punctuation
+- Showcases multi-line string handling
+
+### Included Topics
