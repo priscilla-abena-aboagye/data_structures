@@ -7,4 +7,10 @@ This repository contains a Python script demonstrating the usage of the ' `strin
 - Prints ASCII letters, digits, and punctuation
 - Showcases multi-line string handling
 
-### Included Topics
+### Sample Code
+```
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+
+```
