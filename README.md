@@ -14,3 +14,12 @@ print(string.ascii_lowercase)
 print(string.ascii_uppercase)
 
 ```
+
+### Output Example
+```
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+```
