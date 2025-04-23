@@ -33,3 +33,16 @@ a = ("m", "n", "o")
 b = ["d", "f", "r"]
 b[0] = "w"
 print(b)
+
+c = "hello"
+d = b"hello"
+print(type(c), type(d))
+
+print(ord("A"))
+print(ord("Z"))
+print(ord("a"))
+print(ord("z"))
+print(chr(91))
+
+my_name = "Abena"
+print()
