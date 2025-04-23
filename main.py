@@ -28,3 +28,8 @@ print(all_grades[1][2])
 name = "Priscilla"
 name = "Priscilla" * 3
 print(name)
+
+a = ("m", "n", "o")
+b = ["d", "f", "r"]
+a[1] = "p"
+b[0] = "w"
