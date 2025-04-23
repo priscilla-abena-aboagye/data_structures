@@ -31,5 +31,5 @@ print(name)
 
 a = ("m", "n", "o")
 b = ["d", "f", "r"]
-a[1] = "p"
 b[0] = "w"
+print(b)
