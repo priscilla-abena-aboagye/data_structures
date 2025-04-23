@@ -23,8 +23,6 @@ for grade in all_grades:
 print(all_grades[0][1])
 print(all_grades[1][2])
 
-'''
-
 name = "Priscilla"
 name = "Priscilla" * 3
 print(name)
@@ -44,5 +42,10 @@ print(ord("a"))
 print(ord("z"))
 print(chr(91))
 
+'''
+
 my_name = "Abena"
-print()
+print(list(my_name))
+
+raw_version = b"Abena"
+print(list(raw_version))
