@@ -42,10 +42,19 @@ print(ord("a"))
 print(ord("z"))
 print(chr(91))
 
-'''
+
 
 my_name = "Abena"
 print(list(my_name))
 
 raw_version = b"Abena"
 print(list(raw_version))
+'''
+
+grining_face = "😀"
+encode_grining_face = grining_face.encode("utf-8")
+print(list(encode_grining_face))
+
+q = "Frank is playing ⚽"
+encode_q = q.encode("utf-8")
+print(list(encode_q))
