@@ -49,7 +49,6 @@ print(list(my_name))
 
 raw_version = b"Abena"
 print(list(raw_version))
-'''
 
 grining_face = "😀"
 encode_grining_face = grining_face.encode("utf-8")
@@ -58,3 +57,10 @@ print(list(encode_grining_face))
 q = "Frank is playing ⚽"
 encode_q = q.encode("utf-8")
 print(list(encode_q))
+print(encode_q.decode("utf-8"))
+'''
+
+names = ["abena", "kojo", "pp"]
+names.insert(1, "maa")
+for name in names:
+    print(name)
