@@ -58,9 +58,22 @@ q = "Frank is playing ⚽"
 encode_q = q.encode("utf-8")
 print(list(encode_q))
 print(encode_q.decode("utf-8"))
-'''
 
 names = ["abena", "kojo", "pp"]
 names.insert(1, "maa")
 for name in names:
     print(name)
+
+    add = 0 
+grades = [20, 30, 40, 50, 60]
+for grade in grades:
+    add = add + grade
+print(add)
+
+'''
+error_margin = [0.16, 0.22, -0.8, 7.2, 22.1]
+result = 0
+for i in error_margin:
+    result = (result + i)
+average = result / len(error_margin)
+print(f"The average is {result}")
