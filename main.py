@@ -1,4 +1,3 @@
-'''
 import string
 
 first_name = "priscilla"
@@ -116,7 +115,7 @@ print(friuts[1:4:1])
 print(friuts[3:0:-1])
 print(friuts[-2:-5:-1])
 
-'''
+
 
 # loop
 # for loop
