@@ -70,10 +70,18 @@ for grade in grades:
     add = add + grade
 print(add)
 
-'''
+
 error_margin = [0.16, 0.22, -0.8, 7.2, 22.1]
 result = 0
 for i in error_margin:
     result = (result + i)
 average = result / len(error_margin)
 print(f"The average is {result}")
+
+byte_data = bytes([97, 98, 101, 110, 97])
+print(byte_data)
+
+myself_byte_data = b"abena"
+print(list(myself_byte_data))
+
+'''
