@@ -85,3 +85,13 @@ myself_byte_data = b"abena"
 print(list(myself_byte_data))
 
 '''
+string_vowels = "aeiou"
+list_vowels = list(string_vowels)
+print(list_vowels) # ['a', 'e', 'i', 'o', 'u']
+sentence = "I am going home"
+print(list(sentence))
+
+# slicing
+friuts = ["mango", "apple", "banana", "orange", "kiwi"]
+print(friuts[0:3])
+print(friuts[1:]) # friuts[1:len(friuts)]
