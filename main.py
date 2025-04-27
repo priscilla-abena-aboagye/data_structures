@@ -95,3 +95,24 @@ print(list(sentence))
 friuts = ["mango", "apple", "banana", "orange", "kiwi"]
 print(friuts[0:3])
 print(friuts[1:]) # friuts[1:len(friuts)]
+print(friuts[:])
+print(friuts[:3])
+print(friuts[1:4])
+print(friuts[0:5:2])
+
+# Negative slicing or reversal order
+print(friuts[-3:])
+print(friuts[-3:0]) # empty
+print(friuts[::-1]) # reverses the entire list
+print(friuts[1:4:-1]) # empty
+print(friuts[-1:-4:-1])
+print(friuts[-5:-2:])
+print(friuts[-5:-2:1])
+print(friuts[-5:-2:-1])
+print(friuts[-3:-6:-1])
+print(friuts[-3::-1])
+print(friuts[2::-1])
+print(friuts[-4:-1:1])
+print(friuts[1:4:1])
+print(friuts[3:0:-1])
+print(friuts[-2:-5:-1])
