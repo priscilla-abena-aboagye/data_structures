@@ -84,7 +84,6 @@ print(byte_data)
 myself_byte_data = b"abena"
 print(list(myself_byte_data))
 
-'''
 string_vowels = "aeiou"
 list_vowels = list(string_vowels)
 print(list_vowels) # ['a', 'e', 'i', 'o', 'u']
@@ -116,3 +115,19 @@ print(friuts[-4:-1:1])
 print(friuts[1:4:1])
 print(friuts[3:0:-1])
 print(friuts[-2:-5:-1])
+
+'''
+
+# loop
+# for loop
+a = range(1, 36)
+print(list(a))
+
+for num in range(10, 41):
+   print(num, end=",")
+
+# while loop
+x = 0
+while x < 16:
+    print(x)
+    x = x + 1
