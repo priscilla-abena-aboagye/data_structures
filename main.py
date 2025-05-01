@@ -135,11 +135,15 @@ while x < 16:
 
 '''
 
-cars = ["audi", "bmw", "subaru", "toyota"]
+def testCar(cars):  
 
-for car in cars:
-    if car == "bmw":
-        print(f"I have a {car.upper()}")
-    else:
-        print(f"I have a {car}")
-              
+    for car in cars:
+        if car == "bmw":
+          print(f"I have a {car.upper()}")
+        else:
+          print(f"I have a {car}")
+
+
+cars = ["audi", "bmw", "subaru", "toyota"]
+testCar(cars)
+
