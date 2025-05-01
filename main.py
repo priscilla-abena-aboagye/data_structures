@@ -1,3 +1,5 @@
+'''
+
 import string
 
 first_name = "priscilla"
@@ -130,3 +132,14 @@ x = 0
 while x < 16:
     print(x)
     x = x + 1
+
+'''
+
+cars = ["audi", "bmw", "subaru", "toyota"]
+
+for car in cars:
+    if car == "bmw":
+        print(f"I have a {car.upper()}")
+    else:
+        print(f"I have a {car}")
+              
