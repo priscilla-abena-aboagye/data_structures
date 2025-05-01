@@ -159,6 +159,15 @@ def numbers():
           
 
 numbers()
+
+def even_numbers_assignment():
+    numbers = 2
+
+    while numbers <= 100:
+        if numbers % 2 == 0:
+            print("Even numbers ",numbers)
+        numbers += 1
+
+even_numbers_assignment()
       
-    
-    
+   
