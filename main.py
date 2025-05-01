@@ -162,12 +162,26 @@ numbers()
 
 def even_numbers_assignment():
     numbers = 2
-
     while numbers <= 100:
         if numbers % 2 == 0:
             print("Even numbers ",numbers)
         numbers += 1
 
 even_numbers_assignment()
-      
-   
+
+def counting_backwards():
+    counting_numbers = 10
+    while counting_numbers >= 1:
+        print("backwarss counting", counting_numbers)
+        counting_numbers -= 1
+counting_backwards()
+
+def indexing_fruits():
+    fruits = [
+        "mango", "apple", "pawpaw", "guava", "orange", "banana", "kiwi", "grapes"
+    ]
+
+    for index in range(0, len(fruits)):
+        print(fruits[index])
+
+indexing_fruits()
