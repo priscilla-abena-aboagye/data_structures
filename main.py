@@ -202,6 +202,7 @@ my_self = {
     "best food": ["banku", "Kenkey"],
     "is_married": False
 }
+'''
 print(my_self["school"])
 print(my_self.get("is_married"))
 # print(my_self["surname"])  Error
@@ -217,3 +218,6 @@ deleted_value = my_self.pop("best food")
 print(my_self)
 my_self.popitem()
 print(my_self)
+'''
+for a, b in my_self.items():
+    print(f"The key = {a}, the value = {b}")
