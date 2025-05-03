@@ -133,9 +133,7 @@ while x < 16:
     print(x)
     x = x + 1
 
-'''
-
-def testCar(cars):  
+    def testCar(cars):  
 
     for car in cars:
         if car == "bmw":
@@ -185,3 +183,37 @@ def indexing_fruits():
         print(fruits[index])
 
 indexing_fruits()
+
+'''
+
+# Dictionary
+my_profile =  {
+    "Firstname": "Abena",
+    "Lastname": "Aboagye",
+    "Age": 19,
+    "Single": True
+}
+print(type(my_profile))
+print(my_profile)
+
+my_self = {
+    "name": "Abena Priscilla",
+    "school": "Good hope",
+    "best food": ["banku", "Kenkey"],
+    "is_married": False
+}
+print(my_self["school"])
+print(my_self.get("is_married"))
+# print(my_self["surname"])  Error
+print(my_self.get("surname")) # None
+print(my_self.get("surname", "Aboagye"))
+my_self["best_friend"] = "Me"
+print(my_self.items()) 
+print(my_self.keys())
+print(my_self.values())
+my_self.clear()
+print(my_self)
+deleted_value = my_self.pop("best food")
+print(my_self)
+my_self.popitem()
+print(my_self)
