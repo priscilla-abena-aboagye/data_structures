@@ -48,7 +48,7 @@ counting_backwards = backwards[::-1]
 for back in counting_backwards:
     print(back)
 print("------------------------")
-'''
+
 
 # Question 7
 list_of_numbers= [3, 7, 9, 2, 5]
@@ -62,3 +62,12 @@ mul_of_num = range(1, 13)
 for num in mul_of_num:
     if num % 3 == 0:
         print(num)
+
+'''
+# Question 9
+words = [
+    "hi", "hello", "world", "yes", "python"
+]
+for word in words:
+    if len(word) > 4:
+        print(word)
