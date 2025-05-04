@@ -24,7 +24,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
 ```
 
-## Questions
+## Questions for loop
 
 Write a for loop that prints all the even numbers from 1 to 20.
 
@@ -47,3 +47,31 @@ Example: words = ["hi", "hello", "world", "yes", "Python"]
 
 Write a for loop that adds the numbers in a list and prints the result.
 Example: nums = [4, 8, 15, 16, 23, 42]
+
+### Questions on dictionary
+ Practice Questions
+Create a dictionary called student with keys: "name", "age", and "grade" and assign them appropriate values. Print the value of the "grade" key.
+
+Given the dictionary person = {"name": "Kojo", "age": 30, "city": "Kumasi"}, update the age to 31 and add a new key "occupation" with the value "Engineer".
+
+Loop through the dictionary colors = {"apple": "red", "banana": "yellow", "grape": "purple"} and print each fruit with its color.
+
+Write a program that takes a list of numbers and stores how many times each number appears using a dictionary.
+Example list: [1, 2, 2, 3, 1, 4, 2]
+
+Create a dictionary of your three favorite books and their authors. Then, print only the book titles.
+
+Given marks = {"Math": 85, "Science": 90, "English": 78}, calculate and print the average score.
+
+Write a program that checks if a key exists in a dictionary. Use this dictionary:
+info = {"name": "Akua", "age": 22, "city": "Accra"}
+Check if "age" and "country" exist.
+
+Given a dictionary of products and their prices:
+products = {"pen": 2, "notebook": 5, "eraser": 1},
+increase every price by 1 using a loop.
+
+Make a dictionary where keys are numbers from 1 to 5 and the values are their squares.
+Example: {1: 1, 2: 4, 3: 9, ...}
+
+Write a program that merges two dictionaries.
