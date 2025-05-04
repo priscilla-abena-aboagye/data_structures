@@ -1,4 +1,4 @@
-'''
+
 # Question 1
 def prints_even_numbers():
     numbers = 0
@@ -63,7 +63,7 @@ for num in mul_of_num:
     if num % 3 == 0:
         print(num)
 
-'''
+
 # Question 9
 words = [
     "hi", "hello", "world", "yes", "python"
@@ -71,3 +71,10 @@ words = [
 for word in words:
     if len(word) > 4:
         print(word)
+
+# Question 10
+nums = [4, 8, 15, 16, 23, 42]
+sum = 0
+for num in nums:
+    sum = sum + num
+print(sum)
