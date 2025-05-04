@@ -16,3 +16,13 @@ def sum_of_numbers():
         print(total_numbers)
     total_numbers += 1 
 sum_of_numbers()
+
+# Question 3
+def prints_character(E):
+    for i in E:
+        print(i)
+
+prints_character("SwiftWay") 
+
+# Question 4
+
