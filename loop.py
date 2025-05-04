@@ -25,4 +25,16 @@ def prints_character(E):
 prints_character("SwiftWay") 
 
 # Question 4
+fruits = [
+    "apple", "banana", "cherry", "date"
+]
+for fruit in fruits:
+    print(fruit.upper())
+
+# Question 5
+numbers = range(1, 11)
+for number in numbers:
+    print(pow(number, 2))
+
+# Question 6
 
