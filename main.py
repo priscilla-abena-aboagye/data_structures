@@ -184,7 +184,7 @@ def indexing_fruits():
 
 indexing_fruits()
 
-'''
+
 
 # Dictionary
 my_profile =  {
@@ -202,7 +202,7 @@ my_self = {
     "best food": ["banku", "Kenkey"],
     "is_married": False
 }
-'''
+
 print(my_self["school"])
 print(my_self.get("is_married"))
 # print(my_self["surname"])  Error
@@ -218,6 +218,59 @@ deleted_value = my_self.pop("best food")
 print(my_self)
 my_self.popitem()
 print(my_self)
-'''
+
 for a, b in my_self.items():
     print(f"The key = {a}, the value = {b}")
+
+
+def multiplyBy2(x):
+    print(x * 2)
+m = multiplyBy2(7)
+print(f"m = {m}")
+'''
+
+# Arguments
+def printName(*args):
+    print(type(args))
+    print(args[2])
+printName("Priscilla", "Abena", "Aboagye")
+
+# Keyword arguments
+def showAll(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+showAll(firstName="abena", age=11, pin=2015)
+
+class User:
+    def __init__(self, first_name, last_name, age, password):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+        self.password = password
+
+    def introduction(self):
+        print(f"My name is {self.first_name} {self.last_name}. I am {self.age} years old. My password is {self.password}")
+
+user1 = User("Abena", "Paa", 2, "iwn38r74u49")
+user2 = User("Ben", "Kojo", 22, "1ie8ejd")
+
+print(user1.introduction())
+
+class Animal:
+
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
+
+    def make_sound(self, the_animal_sound):
+        return f"The Animal {self.name} makes the sound {the_animal_sound}"
+    
+    def isLoyal(self):
+        if self.type == "domesticated":
+            return "True it is loyal"
+        else:
+            return "False it is not loyal"
+        
+cat = Animal("Kitty cat", "domesticated")
+print(cat.type)
+print(cat.make_sound("meoww"))
