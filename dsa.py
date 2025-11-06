@@ -1,47 +1,47 @@
 words = ["apple", "banana", "cherry"]
-
-# convert to uppercase
-
-# words_upper = []
-# for word in words:
-#     words_upper.append(word.upper())
-# print(words_upper)
-
-#list comprehension
-# words_upper = [word.upper() for word in words]
-# print(words_upper)
-
-# all_nums = [8, 0, -38, 2, -59.5, -9, 2, 11, 4, -2]
-
-# postive_nums = [num for num in all_nums if num >= 0]
-# print(postive_nums)
 '''
+convert to uppercase
+
+words_upper = []
+for word in words:
+    words_upper.append(word.upper())
+print(words_upper)
+
+list comprehension
+words_upper = [word.upper() for word in words]
+print(words_upper)
+
+all_nums = [8, 0, -38, 2, -59.5, -9, 2, 11, 4, -2]
+
+postive_nums = [num for num in all_nums if num >= 0]
+print(postive_nums)
+
 exceptions are types of runtime errors that cause the program to terminate
 try statement handles a raised execption
-'''
-# enter a num convert to int not a number print something else print ...
 
-# number = input("Enter a number: ")
-# try:
-#     number = int(number)
-#     print(f"You entered {number}")
-# except:
-#     print("That's not a valid number")
+enter a num convert to int not a number print something else print ...
 
-# class Fraction:
-#     def __init__(self, top, bottom):
-#         self.num = top
-#         self.den = bottom
+number = input("Enter a number: ")
+try:
+    number = int(number)
+    print(f"You entered {number}")
+except:
+    print("That's not a valid number")
 
-#     def __str__(self):
-#         return f"{self.num} / {self.den}"
+class Fraction:
+    def __init__(self, top, bottom):
+        self.num = top
+        self.den = bottom
+
+    def __str__(self):
+        return f"{self.num} / {self.den}"
     
-#     def show(self):
-#         print(f"the numerator is {self.num} and the denominator is {self.den}")
+    def show(self):
+        print(f"the numerator is {self.num} and the denominator is {self.den}")
 
-# my_fraction = Fraction(3, 5)
-# print(my_fraction)
-# my_fraction.show()
+my_fraction = Fraction(3, 5)
+print(my_fraction)
+my_fraction.show()
 
 class Point:
     def __init__(self, x, y, z):
@@ -68,4 +68,21 @@ point1 = Point(2, 3, 4)
 point2 = Point(5, 6, 7)
 new_point = point1 + point2
 print(new_point)
+'''
+import time
+def sum_of_n(n):
+    start = time.time()
+    the_sum = 0
+    for i in range(1, n+1):
+        the_sum = the_sum + i
+    end = time.time()
+    return the_sum, end-start
+print(sum_of_n(10))
 
+def sum_of_n(n):
+    start = time.time()
+
+    the_sum = sum([i for i in range(1, n+1)])
+    end = time.time()
+    return the_sum, end-start
+print(sum_of_n(10))
