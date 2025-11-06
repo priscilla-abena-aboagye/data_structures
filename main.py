@@ -227,7 +227,7 @@ def multiplyBy2(x):
     print(x * 2)
 m = multiplyBy2(7)
 print(f"m = {m}")
-'''
+
 
 # Arguments
 def printName(*args):
@@ -274,3 +274,26 @@ class Animal:
 cat = Animal("Kitty cat", "domesticated")
 print(cat.type)
 print(cat.make_sound("meoww"))
+'''
+# lists
+fruits = ["apple", "banana", "guava", "grapes", "cherry"]
+# fruits.append("mango")
+# fruits.insert(2, "pineapple")
+# print(fruits.pop())
+# print(fruits)
+# print(fruits.pop(2))
+# print(fruits)
+# fruits.sort()
+# print(fruits)
+# print(fruits.index("apple"))
+
+# length of arfuments
+
+def argumentsLength(args):
+    return(len(args))
+
+
+# print(argumentsLength([5]))
+print(argumentsLength([{}, None, "3"]))
+
+
