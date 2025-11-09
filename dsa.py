@@ -186,4 +186,14 @@ class Stack:
     def size(self):
         return len(self.my_stack) # returns the size of the stack
     
-
+shoe_stack = Stack()
+print(shoe_stack.is_empty())
+shoe_stack.push(4)
+shoe_stack.push(32)
+print(shoe_stack.peek())
+print(shoe_stack.size())
+print(shoe_stack.is_empty())
+shoe_stack.push("Nike")
+shoe_stack.pop()
+shoe_stack.pop()
+print(shoe_stack.size())
