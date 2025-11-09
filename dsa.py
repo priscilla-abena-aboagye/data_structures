@@ -1,5 +1,6 @@
-words = ["apple", "banana", "cherry"]
 '''
+words = ["apple", "banana", "cherry"]
+
 convert to uppercase
 
 words_upper = []
@@ -68,7 +69,7 @@ point1 = Point(2, 3, 4)
 point2 = Point(5, 6, 7)
 new_point = point1 + point2
 print(new_point)
-'''
+
 import time
 def sum_of_n(n):
     start = time.time()
@@ -108,3 +109,34 @@ def anagram_solution1(s1,s2):
     return still_ok
 
 print(anagram_solution1('abcd','dcba'))
+
+import time
+def sum_of_numbers(n):
+    start = time.time()
+    sum_num = 0
+    for num in range(1, n+1):
+        sum_num += num
+    end = time.time()
+    print(f"the sum is {sum_num}. It took {end-start:.10f} seconds")
+
+sum_of_numbers(1000000000)
+'''
+
+# anagram solution 2
+def anagram_solution(s1, s2):
+    a_list1 = list(s1)
+    a_list2 = list(s2)
+
+    a_list1.sort()
+    a_list2.sort()
+
+    post = 0
+    matches = True
+
+    while post < len(s1) and matches:
+        if a_list1[post] == a_list2[post]:
+            post += 1
+        else:
+            matches = False
+    return matches
+print(anagram_solution())
