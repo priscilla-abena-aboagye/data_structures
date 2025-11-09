@@ -140,7 +140,7 @@ def anagram_solution(s1, s2):
             matches = False
     return matches
 print(anagram_solution("heart", "earth"))
-'''
+
 
 def anagram_solution3(s1, s2):
     c1 = [0] * 26
@@ -165,3 +165,25 @@ def anagram_solution3(s1, s2):
     return still_ok
 
 print(anagram_solution3("heart", "earth"))
+'''
+# to move from ADT to Data structure it is called class 
+class Stack:
+    def __init__(self):
+        self.my_stack = []  # top is the end and the base is the beginning of the list [base   top]
+
+    def push(self, item):
+        self.my_stack.append(item) # to add items 
+
+    def pop(self):
+        return self.my_stack.pop() # to remove the top
+    
+    def peek(self):
+        return self.my_stack[-1] # returns the top element
+    
+    def is_empty(self):
+        return len(self.my_stack) == 0 # checks if it is empty
+    
+    def size(self):
+        return len(self.my_stack) # returns the size of the stack
+    
+
