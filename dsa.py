@@ -197,3 +197,29 @@ shoe_stack.push("Nike")
 shoe_stack.pop()
 shoe_stack.pop()
 print(shoe_stack.size())
+
+def bracket_check(bracket): # checking if all brackets are closed  '((()))'
+    s = Stack() # creates a new stack (((
+    balanced = True
+    index = 0
+
+    while index < len(bracket) and balanced:# index = 3 len= 6
+        symbol = bracket[index] # )
+
+        if symbol == "(":
+            s.push(symbol)
+        else:
+            if s.is_empty():
+                balanced = False # if it is empty break the code 
+            else:
+                s.pop() # remove one of the bracket if it is )
+
+        index += 1
+    
+    if balanced and s.is_empty():
+        return True
+    else:
+        return False
+    
+print(bracket_check('((()))'))
+print(bracket_check('(()'))
