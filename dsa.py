@@ -185,7 +185,8 @@ class Stack:
     
     def size(self):
         return len(self.my_stack) # returns the size of the stack
-    
+
+'''    
 shoe_stack = Stack()
 print(shoe_stack.is_empty())
 shoe_stack.push(4)
@@ -218,7 +219,7 @@ def bracket_check(bracket): # checking if all brackets are closed  '((()))'
                 balanced = False # if it is empty break the code 
             else:
                 top = s.pop() # remove one of the bracket if it is ) top = (
-                if not matches(top, symbol):
+                if not matches(top, symbol): # checks the matches function
                     balanced = False
 
         index += 1
@@ -232,3 +233,21 @@ print(bracket_check('((()))'))
 print(bracket_check('(()'))
 print(bracket_check('{{([][])}()}'))
 print(bracket_check('[{()]'))
+'''
+
+def divide_by_2(number): # 42
+    remainder_stack = Stack() # 0, 1, 0, 1, 0, 1
+
+    while number > 0:
+        remainder = number % 2 # 2 % 2 = 0
+        remainder_stack.push(remainder)
+        number = number // 2 # 0
+
+        string_remainder = "" # "1", "0", "1", "0", "1", "0"
+
+    while not remainder_stack.is_empty():
+        string_remainder += str(remainder_stack.pop())
+
+    return string_remainder
+print(divide_by_2(42))
+
