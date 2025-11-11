@@ -233,7 +233,7 @@ print(bracket_check('((()))'))
 print(bracket_check('(()'))
 print(bracket_check('{{([][])}()}'))
 print(bracket_check('[{()]'))
-'''
+
 
 def divide_by_2(number): # 42
     remainder_stack = Stack() # 0, 1, 0, 1, 0, 1
@@ -250,4 +250,23 @@ def divide_by_2(number): # 42
 
     return string_remainder
 print(divide_by_2(42))
+'''
+
+def base_convertor(number, base): # 25, 16
+    digits = "0123456789ABCDEF"
+    remainder_stack = Stack() # 9, 1
+
+    while number > 0: # 1
+        remainder = number % base # 9
+        remainder_stack.push(remainder)
+        number = number // base # 1
+
+    new_string ="" # 1, 9
+    while not remainder_stack.is_empty(): # True
+        new_string += digits[remainder_stack.pop()] # digits[1]
+
+    return new_string
+print(base_convertor(25, 8))
+print(base_convertor(256, 16)) 
+print(base_convertor(26, 26))
 
