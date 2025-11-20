@@ -250,7 +250,7 @@ def divide_by_2(number): # 42
 
     return string_remainder
 print(divide_by_2(42))
-'''
+
 
 def base_convertor(number, base): # 25, 16
     digits = "0123456789ABCDEF"
@@ -269,4 +269,38 @@ def base_convertor(number, base): # 25, 16
 print(base_convertor(25, 8))
 print(base_convertor(256, 16)) 
 print(base_convertor(26, 26))
+'''
+import string
+def infix_to_postfix(infix):
+    precedence = {
+        "*": 3,
+        "/": 3,
+        "+": 2,
+        "-": 2,
+        "(": 1
+    }
+    alphabets = string.ascii_uppercase
+    letters = string.ascii_letters
+    op_stack = Stack()
+    infix_list = []
+    token_list = infix.split()
+    for token in token_list:
+        if token in alphabets or token in letters:
+            infix_list.append(token)
+        elif token == "(":
+            op_stack.push(token)
+        elif token == ")":
+            top_token = op_stack.pop()
+            while top_token != "(":
+                infix_list.append(top_token)
+                top_token = op_stack.pop()
+        else:
+            while (not op_stack.is_empty()) and (precedence[op_stack.peek()] >= precedence[token]):
+                infix_list.append(op_stack.pop())
+            op_stack.push(token) 
 
+    while not op_stack.is_empty():
+        infix_list.append(op_stack.pop())
+    return " ".join(infix_list)
+
+print(infix_to_postfix("A * B + C * D"))
